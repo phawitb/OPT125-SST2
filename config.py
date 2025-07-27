@@ -20,6 +20,7 @@ BACKPROP = {
     "SEED":         42,
 
     "LOCAL_STEPS":   50,   # จำนวน step ที่ client train ต่อรอบ
+    "ROUNDS":      20
 }
 
 # ------- Zeroth-Order (ZO-SGD) -------
