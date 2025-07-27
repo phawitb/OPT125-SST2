@@ -13,7 +13,7 @@ from datasets import load_from_disk
 HOST        = "0.0.0.0"
 PORT        = config.SERVER_PORT
 NUM_CLIENTS = config.NUM_CLIENTS
-ROUNDS      = config.ROUNDS
+ROUNDS      = config.BACKPROP.get("ROUNDS", 10) # config.ROUNDS
 DEVICE      = "cuda" if torch.cuda.is_available() else "cpu"
 LR_GLOBAL   = config.BACKPROP.get("LEARNING_RATE", 5e-5)
 
